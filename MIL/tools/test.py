@@ -179,7 +179,9 @@ def main():
         save_root = 'results/patient_preds/'
         if not os.path.exists(save_root):
             os.makedirs(save_root)
-        save_path = os.path.join(save_root,time.strftime('%Y%m%d_%H%M%S', time.localtime())+'.csv')
+        save_path = os.path.join(save_root,
+                                 os.path.splitext(os.path.basename(args.config))[0],
+                                 time.strftime('%Y%m%d_%H%M%S', time.localtime())+'.csv')
         names, preds, probs, gts = [],[],[],[]
         for i, data in enumerate(data_loader):
             result = model.module.get_pred(**data)
