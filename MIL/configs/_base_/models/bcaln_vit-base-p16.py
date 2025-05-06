@@ -22,6 +22,7 @@ model = dict(
         in_channels=in_channels,
         loss=dict(
             type='LabelSmoothLoss', 
+            label_smooth_val=0.0,
             num_classes=num_classes,
             loss_weight=1.0),
     ))
