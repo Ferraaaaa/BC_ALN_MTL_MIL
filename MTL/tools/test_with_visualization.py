@@ -274,7 +274,10 @@ def main():
 
         kwargs['class_ids']=class_ids
         kwargs['save_csv'] = args.save_csv
-        kwargs['save_dir'] = cfg.work_dir 
+        kwargs['save_dir'] = osp.join(
+            'results/mtl_preds/',
+            osp.splitext(osp.basename(args.config))[0]
+        )
         
         if args.format_only:
             dataset.format_results(outputs, **kwargs)
