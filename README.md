@@ -59,10 +59,10 @@ Dataset
 |  |  |——Y (Positive)
 |  |  |  |——BBB (name)
 |  |  |  |  |——T (TIs)
-|  |  |  |  |  |——Y_BBB_T_1.jpg
+|  |  |  |  |  |——Y_BBB_T_1.png
 |  |  |  |  |  |——...
 |  |  |  |  |——L (Lymph)
-|  |  |  |  |  |——Y_BBB_L_1.jpg
+|  |  |  |  |  |——Y_BBB_L_1.png
 |  |  |  |  |  |——...
 |  |  |  |——...
 |  |——val
