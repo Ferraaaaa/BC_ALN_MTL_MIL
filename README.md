@@ -131,7 +131,7 @@ CUDA_VISIBLE_DEVICES=0 PORT=12345 MTL/tools/test_with_visualization.py MTL/confi
 # save patient preds
 CUDA_VISIBLE_DEVICES=0,1,2,3 PORT=12345 scripts/inference_mil.sh MIL/configs/bcaln/bcaln_vit_segformer.py
 ```
-These results will be saved to `scripts/saved_pt`, `scripts/mtl_preds`, `scripts/visualization` and `scripts/patient_preds`, respectively.
+These results will be saved to `results/saved_pt`, `results/mtl_preds`, `results/visualization` and `results/patient_preds`, respectively.
 
 ### Acknowledgements
 Last, we thank these authors for sharing their source code:
